@@ -1,9 +1,27 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let reversedWord = '';
+  word = word.toLowerCase();
+  reversedWord = [...word].reverse().join('');
+  if(word === reversedWord ){
+    return true;
+  }
+  else {
+    return false;
+  }
+
 }
 
 /* 
   Add your pseudocode here
+  declare a variabe reversedWord to hold the rreversed string
+  convert the revered word to lowerCase
+  split word
+  reverse word
+  join word 
+  is word === reversedWord
+  return true is yes
+  return false if not
 */
 
 /*
